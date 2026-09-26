@@ -3,177 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Westgate Barber Shop | Enterprise, Alabama</title>
-  <meta name="description" content="Website concept for Westgate Barber Shop in Enterprise, Alabama.">
-  <meta name="theme-color" content="#101827">
+  <title>Southern Roots Salon & Barber Shop | Enterprise, Alabama</title>
+  <meta name="description" content="Website concept for Southern Roots Salon & Barber Shop in Enterprise, Alabama.">
+  <meta name="theme-color" content="#3a1f1f">
   <style>
-    :root{--bg:#101827;--surface:#182236;--surface2:#202d43;--ink:#f2eee6;--muted:#a8b0bf;--accent:#b64b4b;--line:rgba(242,238,230,.12);--shadow:0 24px 70px rgba(0,0,0,.28)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-    a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
-    .nav{position:sticky;top:0;z-index:20;background:rgba(16,24,39,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.08em;text-transform:uppercase;font-size:.9rem}.brand span{color:var(--accent)}
-    .links{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--ink)}
-    .hero{padding:92px 0 80px;background:radial-gradient(circle at 80% 20%,rgba(182,75,75,.18),transparent 35%),linear-gradient(135deg,#111a2b,#0f1624)}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.eyebrow{display:inline-block;padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
-    h1{font-size:clamp(3.2rem,8vw,6.3rem);line-height:.94;margin:20px 0;letter-spacing:-.055em;max-width:760px}.hero p{color:var(--muted);font-size:1.1rem;max-width:600px}
-    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 19px;border-radius:12px;border:1px solid var(--line);font-weight:800;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
-    .btn.primary{background:var(--accent);border-color:var(--accent);color:white}.btn.secondary{background:transparent}.btn:hover{transform:translateY(-1px)}
-    .hero-card{background:linear-gradient(160deg,#1d2a41,#151f31);border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
-    .hero-card .big{font-size:4.4rem;font-weight:900;line-height:.9;color:var(--accent)}.hero-card small{display:block;color:var(--muted);margin-top:12px}.verified{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}.verified strong{color:var(--ink)}
-    section{padding:80px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1;margin:0}.section-head p{color:var(--muted);max-width:540px;margin:0}
-    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}.card h3{margin:0 0 10px;font-size:1.2rem}.card p{margin:0;color:var(--muted)}
-    .num{font-size:.8rem;color:var(--accent);font-weight:900;letter-spacing:.08em}.about{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:34px}.panel h3{font-size:1.45rem;margin-top:0}
-    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}.stars{color:var(--accent);letter-spacing:.18em;font-size:.8rem}.review h3{font-size:1rem;margin:13px 0 7px}.review p{margin:0;color:var(--muted);font-size:.92rem}.review small{display:block;color:#7f8998;margin-top:15px;font-size:.72rem}
-    .gallery{display:grid;grid-template-columns:1.3fr .7fr;gap:16px}.photo{border-radius:20px;border:1px solid var(--line);min-height:240px;background:linear-gradient(145deg,#202d43,#141d2c);position:relative;overflow:hidden}.photo.big{min-height:360px;background:radial-gradient(circle at 75% 25%,rgba(182,75,75,.25),transparent 24%),linear-gradient(135deg,#1b2940,#0e1420)}.photo:before{content:"";position:absolute;inset:9%;border:1px solid rgba(242,238,230,.09);transform:skewY(-5deg)}.photo-copy{position:absolute;left:22px;right:22px;bottom:20px}.photo-copy b{display:block;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}.photo-copy span{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}.photo-stack{display:grid;grid-template-rows:1fr 1fr;gap:16px}
-    .hours{display:grid;gap:12px;margin-top:20px}.row{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0;color:var(--muted)}.row strong{color:var(--ink)}
-    .booking{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}.form{display:grid;gap:14px}.form input,.form textarea{width:100%;border:1px solid var(--line);background:#101827;color:var(--ink);border-radius:11px;padding:13px}.form textarea{min-height:120px;resize:vertical}
-    .note{font-size:.82rem;color:var(--muted);margin:12px 0 0}.maplink{display:inline-block;margin-top:14px;color:#fff;text-decoration:underline;text-underline-offset:4px}.rating{display:inline-flex;gap:9px;align-items:center;margin-top:18px;padding:9px 12px;border-radius:999px;background:rgba(182,75,75,.1);border:1px solid rgba(182,75,75,.3);font-size:.82rem}.rating strong{color:var(--ink)}
-    footer{padding:32px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}.disclaimer{padding:14px 16px;border:1px dashed rgba(182,75,75,.5);border-radius:12px;margin-top:18px}
-    @media(max-width:820px){.hero-grid,.about,.booking,.gallery{grid-template-columns:1fr}.grid3,.review-grid{grid-template-columns:1fr}.photo.big{min-height:270px}.links{display:none}.hero{padding-top:64px}section{padding:62px 0}.section-head{display:block}.section-head p{margin-top:12px}}
+    :root{--bg:#211516;--surface:#302022;--surface2:#3a2729;--ink:#f8f1e9;--muted:#c6b9ae;--accent:#d2a06a;--line:rgba(248,241,233,.13);--cream:#f3e9dc}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(33,21,22,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.07em;text-transform:uppercase;font-size:.84rem}.brand span{color:var(--accent)}
+    .links{display:flex;gap:22px;color:var(--muted);font-size:.9rem;font-weight:700}.links a:hover{color:var(--ink)}
+    .hero{padding:90px 0 72px;background:radial-gradient(circle at 80% 20%,rgba(210,160,106,.19),transparent 34%),linear-gradient(145deg,#2b1b1d,#1f1416)}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}.eyebrow{display:inline-block;padding:7px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em}
+    h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(3.2rem,8vw,6.4rem);line-height:.94;letter-spacing:-.05em;margin:20px 0 18px}.hero p{color:var(--muted);font-size:1.08rem;max-width:620px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{padding:13px 18px;border-radius:999px;border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;font-weight:900;cursor:pointer}.btn.primary{background:var(--accent);border-color:var(--accent);color:#24191a}.btn.secondary{background:transparent}.btn:hover{transform:translateY(-1px)}
+    .hero-card{background:linear-gradient(160deg,#432b2d,#2b1d20);border:1px solid var(--line);border-radius:24px;padding:30px;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end}
+    .hero-card .big{font:100px Georgia;color:var(--accent);line-height:.75}.hero-card h3{font-family:Georgia;font-size:1.7rem;margin:28px 0 7px}.hero-card p{font-size:.9rem;color:var(--muted);margin:0}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#26191b}.facts div{padding:18px;border-right:1px solid var(--line);text-align:center}.facts div:last-child{border-right:0}.facts strong,.facts span{display:block}.facts strong{font-size:.76rem;letter-spacing:.08em}.facts span{font-size:.72rem;color:var(--muted);margin-top:4px}
+    section{padding:80px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.head h2{font:400 clamp(2.3rem,5vw,3.8rem) Georgia;line-height:1;margin:0}.head p{max-width:560px;color:var(--muted);margin:0}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:25px}.num{font-size:.75rem;color:var(--accent);font-weight:900;letter-spacing:.12em}.card h3{font:400 1.4rem Georgia;margin:22px 0 8px}.card p{margin:0;color:var(--muted);font-size:.92rem}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:30px}.panel h3{font:400 2rem Georgia;margin:10px 0}.panel p{color:var(--muted)}
+    .photo-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:14px}.photo{position:relative;min-height:300px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(135deg,#543237,#2d1e21)}.photo.small{min-height:143px}.photo:before{content:"";position:absolute;inset:9%;border:1px solid rgba(255,255,255,.09);transform:skewY(-5deg)}.photo-label{position:absolute;left:18px;right:18px;bottom:17px}.photo-label b{display:block;color:var(--accent);font-size:.68rem;text-transform:uppercase;letter-spacing:.12em}.photo-label span{font-size:.78rem;color:var(--muted)}
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.review{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}.stars{color:var(--accent);letter-spacing:.14em}.review h3{font-size:1rem;margin:12px 0 6px}.review p{color:var(--muted);font-size:.88rem;margin:0}.review small{color:#958a82;display:block;margin-top:13px;font-size:.7rem}.rating{margin:0 0 18px;color:var(--muted);font-size:.85rem}.rating strong{color:var(--ink);font-size:1rem}
+    .visit{display:grid;grid-template-columns:1fr .9fr;gap:20px}.hours{display:grid;gap:11px;margin-top:20px}.row{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid var(--line);color:var(--muted)}.row strong{color:var(--ink)}
+    .contact-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.contact-actions a{border:1px solid var(--line);padding:11px 14px;border-radius:10px;font-weight:800;font-size:.83rem}.contact-actions a.primary{background:var(--accent);border-color:var(--accent);color:#23181a}
+    .booking{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px}.form{display:grid;gap:13px}.form label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:900}.form input,.form textarea,.form select{width:100%;display:block;margin-top:6px;background:#221719;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px}.form textarea{min-height:110px}.success{color:var(--accent);font-size:.82rem;min-height:20px}
+    footer{padding:30px 0 42px;border-top:1px solid var(--line);color:var(--muted);font-size:.78rem}.disclaimer{margin-top:15px;padding:13px 15px;border:1px dashed rgba(210,160,106,.35);border-radius:10px}
+    @media(max-width:820px){.hero-grid,.about,.visit,.booking{grid-template-columns:1fr}.grid3,.reviews{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--line)}.links{display:none}.hero{padding-top:65px}section{padding:62px 0}.head{display:block}.head p{margin-top:12px}.photo-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header class="nav">
-    <div class="wrap navin">
-      <a class="brand" href="#top">Westgate <span>Barber Shop</span></a>
-      <nav class="links" aria-label="Main navigation">
-        <a href="#services">Services</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a href="#booking">Book</a>
-      </nav>
-    </div>
-  </header>
+  <header class="nav"><div class="wrap navin"><a class="brand" href="#top">Southern <span>Roots</span></a><nav class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a href="#booking">Book</a></nav></div></header>
 
   <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <span class="eyebrow">Enterprise, Alabama · Website concept</span>
-          <h1>Look sharp.<br>Feel sharper.</h1>
-          <p>A polished local-barbershop experience with the things customers need most up front: services, hours, location, reviews, and an easy appointment request.</p>
-          <div class="actions">
-            <a class="btn primary" href="#booking">Request an appointment</a>
-            <a class="btn secondary" href="#visit">See location & hours</a>
-          </div>
+          <span class="eyebrow">205 N Main St · Enterprise, Alabama</span>
+          <h1>Good hair.<br>Good people.</h1>
+          <p>A modern website concept for Southern Roots Salon & Barber Shop — designed to make the salon's services, hours, location, contact options, and appointment flow easy to find.</p>
+          <div class="actions"><a class="btn primary" href="#booking">Request an appointment</a><a class="btn secondary" href="#visit">Call & visit info</a></div>
         </div>
-        <aside class="hero-card">
-          <div class="big">01</div>
-          <h3>Built for a local business</h3>
-          <small>Mobile-friendly layout, clear calls-to-action, and a clean path from finding the shop to planning a visit.</small>
-          <div class="verified"><strong>Verified listing details</strong><br>621 Boll Weevil Cir #15 · Enterprise, AL<br>Mon–Fri 8:00 AM–6:30 PM · Sat 8:00 AM–4:00 PM</div>
-        </aside>
+        <aside class="hero-card"><div class="big">SR</div><h3>Southern Roots</h3><p>Salon & Barber Shop · Enterprise, Alabama</p></aside>
       </div>
     </section>
 
-    <section id="services">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Services</h2>
-          <p>Core services presented without inventing prices. A real launch should use the shop's exact service names and current pricing supplied by the owner.</p>
-        </div>
-        <div class="grid3">
-          <article class="card"><div class="num">01</div><h3>Classic Cuts</h3><p>Clean, personalized haircuts with a polished finish.</p></article>
-          <article class="card"><div class="num">02</div><h3>Fades</h3><p>Low, medium, high, and skin-fade styles can be featured here.</p></article>
-          <article class="card"><div class="num">03</div><h3>Beard & Trim</h3><p>Beard and mustache detailing to finish the look.</p></article>
-        </div>
-      </div>
-    </section>
+    <div class="facts"><div><strong>MON–FRI</strong><span>9:00 AM – 5:00 PM</span></div><div><strong>SATURDAY</strong><span>9:00 AM – 12:00 PM</span></div><div><strong>PHONE</strong><span>(334) 475-4474</span></div></div>
 
-    <section id="about">
-      <div class="wrap about">
-        <div class="panel">
-          <span class="num">ABOUT THE CONCEPT</span>
-          <h3>A website that feels established.</h3>
-          <p style="color:var(--muted)">This design is intentionally simple: the customer can understand the shop quickly without digging through a giant menu.</p>
-          <p style="color:var(--muted)">The final version can add owner-approved photos, barber bios, exact services and prices, social links, a real booking provider, and the shop's preferred contact information.</p>
-          <a class="btn secondary" href="#booking">See the booking flow</a>
-        </div>
-        <div class="panel">
-          <span class="num">OWNER-APPROVED PHOTOS</span>
-          <div class="gallery" style="margin-top:16px">
-            <div class="photo big"><div class="photo-copy"><b>Photo placeholder</b><span>Replace with an owner-approved shop photo.</span></div></div>
-            <div class="photo-stack"><div class="photo"><div class="photo-copy"><b>Chair / interior</b><span>Real shop photo goes here.</span></div></div><div class="photo"><div class="photo-copy"><b>Cut / detail</b><span>Real work photo goes here.</span></div></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="services"><div class="wrap"><div class="head"><h2>Services</h2><p>A simple service structure for the final site. Exact service names and current pricing can be added after the owner confirms them.</p></div><div class="grid3">
+      <article class="card"><div class="num">01</div><h3>Haircuts</h3><p>Personalized cuts with a clean, finished look.</p></article>
+      <article class="card"><div class="num">02</div><h3>Barber Services</h3><p>Men's cuts, fades, and beard or mustache detailing can be featured here.</p></article>
+      <article class="card"><div class="num">03</div><h3>Salon Services</h3><p>Salon-focused styling, including services for different hair types and styles.</p></article>
+    </div></div></section>
 
-    <section id="reviews">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>What customers highlight</h2>
-          <p>These are themes summarized from public review information, not fabricated testimonials.</p>
-        </div>
-        <div class="rating"><strong>4.5 / 5</strong><span>24 reviews in a current local directory listing</span></div>
-        <div class="review-grid" style="margin-top:18px">
-          <article class="review"><div class="stars">★★★★★</div><h3>Fades & personalized cuts</h3><p>Public reviewers frequently mention fade work and cuts tailored to the customer.</p><small>Theme summarized from public reviews</small></article>
-          <article class="review"><div class="stars">★★★★★</div><h3>Fast, friendly service</h3><p>Reviewers also describe the service as welcoming and efficient.</p><small>Theme summarized from public reviews</small></article>
-          <article class="review"><div class="stars">★★★★★</div><h3>Beard & mustache trims</h3><p>Beard and mustache cleanup is another service mentioned by customers.</p><small>Theme summarized from public reviews</small></article>
-        </div>
-        <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Westgate+Barber+Shop/@31.3208622,-85.8331459,266m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88926f6760fd5909:0x37b8008f38b46011!8m2!3d31.3208622!4d-85.8325022!16s%2Fg%2F11lns6705d?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D">View public listing on Google Maps →</a>
-      </div>
-    </section>
+    <section id="about"><div class="wrap about">
+      <div class="panel"><div class="num">ABOUT THE CONCEPT</div><h3>A site built around the local experience.</h3><p>This version makes the business name, contact information, hours, location, and booking path visible right away.</p><p>The final version can use owner-approved photos, exact service/pricing information, stylist bios, social links, and a real booking platform.</p><div class="contact-actions"><a class="primary" href="tel:+13344754474">Call the shop</a><a target="_blank" rel="noopener" href="https://www.facebook.com/southernroots4474">Facebook</a></div></div>
+      <div class="panel"><div class="num">PHOTO PLACEHOLDERS</div><div class="photo-grid" style="margin-top:16px"><div class="photo"><div class="photo-label"><b>Shop interior</b><span>Replace with an owner-approved photo.</span></div></div><div style="display:grid;gap:14px"><div class="photo small"><div class="photo-label"><b>Stylist at work</b><span>Approved photo goes here.</span></div></div><div class="photo small"><div class="photo-label"><b>Finished style</b><span>Approved photo goes here.</span></div></div></div></div></div>
+    </div></section>
 
-    <section id="visit">
-      <div class="wrap about">
-        <div class="panel">
-          <span class="num">VISIT</span>
-          <h3>Find the shop.</h3>
-          <p style="color:var(--muted);margin-bottom:0">621 Boll Weevil Cir #15<br>Enterprise, AL 36330</p>
-          <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Westgate+Barber+Shop/@31.3208622,-85.8331459,266m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88926f6760fd5909:0x37b8008f38b46011!8m2!3d31.3208622!4d-85.8325022!16s%2Fg%2F11lns6705d?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D">Open in Google Maps →</a>
-          <div class="hours">
-            <div class="row"><span>Monday–Friday</span><strong>8:00 AM–6:30 PM</strong></div>
-            <div class="row"><span>Saturday</span><strong>8:00 AM–4:00 PM</strong></div>
-            <div class="row"><span>Sunday</span><strong>Closed</strong></div>
-          </div>
-          <p class="note">A phone number was not included in the current directory listing I checked, so the demo does not invent one. The owner can add click-to-call once the correct number is provided.</p>
-        </div>
-        <div class="panel" style="min-height:100%">
-          <span class="num">MAP</span>
-          <div class="real-map" style="margin-top:16px">
-            <iframe title="Map showing Westgate Barber Shop in Enterprise, Alabama" src="https://www.openstreetmap.org/export/embed.html?bbox=-85.8352%2C31.3192%2C-85.8298%2C31.3225&layer=mapnik&marker=31.3208622%2C-85.8325022" style="width:100%;height:330px;border:0;border-radius:18px;display:block;background:#111927" loading="lazy"></iframe>
-            <div style="display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:10px">
-              <span style="font-size:.75rem;color:var(--muted)">621 Boll Weevil Cir #15 · Enterprise, AL 36330</span>
-              <a class="maplink" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Westgate+Barber+Shop/@31.3208622,-85.8331459,266m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88926f6760fd5909:0x37b8008f38b46011!8m2!3d31.3208622!4d-85.8325022!16s%2Fg%2F11lns6705d?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D">Google Maps →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="reviews"><div class="wrap"><div class="head"><h2>What customers highlight</h2><p>These are themes summarized from public review information, rather than invented customer quotes.</p></div><div class="rating"><strong>4.3 / 5</strong> · 6 reviews in the current local business listing</div><div class="reviews">
+      <article class="review"><div class="stars">★★★★★</div><h3>Haircut quality</h3><p>Public reviews include strong praise for haircut results and skill.</p><small>Theme summarized from public reviews</small></article>
+      <article class="review"><div class="stars">★★★★★</div><h3>Friendly people</h3><p>Several reviewers specifically compliment the people and customer service.</p><small>Theme summarized from public reviews</small></article>
+      <article class="review"><div class="stars">★★★★★</div><h3>Different hair needs</h3><p>Reviews mention service for curly hair as well as men's cuts.</p><small>Theme summarized from public reviews</small></article>
+    </div></div></section>
 
-    <section id="booking">
-      <div class="wrap booking">
-        <div class="panel">
-          <span class="num">BOOKING</span>
-          <h2 style="margin:10px 0 8px">Ready for a fresh cut?</h2>
-          <p style="color:var(--muted)">This is a working demo form. In a real site, the owner can connect it to their booking platform or preferred contact method.</p>
-          <p class="note">No appointment is actually sent from this demo.</p>
-        </div>
-        <div class="panel">
-          <form class="form" id="demoForm">
-            <input required name="name" placeholder="Your name" aria-label="Your name">
-            <input required type="tel" name="phone" placeholder="Phone number" aria-label="Phone number">
-            <input required type="date" name="date" aria-label="Preferred date">
-            <textarea name="message" placeholder="What service are you looking for?"></textarea>
-            <button class="btn primary" type="submit">Send request</button>
-          </form>
-          <p class="note" id="formMessage">Demo only — no real appointment will be sent.</p>
-        </div>
-      </div>
-    </section>
+    <section id="visit"><div class="wrap visit"><div class="panel"><div class="num">VISIT</div><h3>Come see us.</h3><p>205 N Main St B<br>Enterprise, AL 36330</p><div class="hours"><div class="row"><span>Monday–Friday</span><strong>9:00 AM–5:00 PM</strong></div><div class="row"><span>Saturday</span><strong>9:00 AM–12:00 PM</strong></div><div class="row"><span>Sunday</span><strong>Closed</strong></div></div><div class="contact-actions"><a class="primary" href="tel:+13344754474">📞 (334) 475-4474</a><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Southern+Roots+Salon+%26+Barber+Shop%2C+205+N+Main+St+B%2C+Enterprise%2C+AL+36330">Google Maps →</a></div></div><div class="panel"><div class="num">FIND US</div><iframe title="Map for Southern Roots Salon & Barber Shop" src="https://www.openstreetmap.org/export/embed.html?bbox=-85.8350%2C31.3179%2C-85.8294%2C31.3216&layer=mapnik&marker=31.31978%2C-85.8322" style="width:100%;height:330px;border:0;border-radius:18px;display:block" loading="lazy"></iframe><p class="note" style="color:var(--muted);font-size:.76rem">Map is approximate to the listed downtown address. Use Google Maps for exact directions.</p></div></div></section>
+
+    <section id="booking"><div class="wrap booking"><div class="panel"><div class="num">BOOKING</div><h2 style="font:400 clamp(2.4rem,5vw,3.7rem) Georgia;line-height:1;margin:10px 0">Ready for your next appointment?</h2><p>This is a demo booking flow. A live version can connect to the salon's real booking system or preferred contact method.</p></div><div class="panel"><form class="form" id="bookingForm"><label>Name<input required name="name" placeholder="Your name"></label><label>Phone<input required name="phone" type="tel" placeholder="Phone number"></label><label>Service<select name="service"><option>Haircut</option><option>Barber service</option><option>Salon service</option><option>Not sure yet</option></select></label><label>Preferred date<input required name="date" type="date"></label><label>Note<textarea name="note" placeholder="Anything the salon should know?"></textarea></label><button class="btn primary" type="submit">Request Appointment</button></form><div class="success" id="success" aria-live="polite"></div></div></div></section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <div><strong>Westgate Barber Shop</strong> · Enterprise, Alabama</div>
-      <div class="disclaimer">WEBSITE CONCEPT: This page was created as a design/demo concept and is not an official Westgate Barber Shop website. Business details, pricing, photos, reviews, phone number, and booking method should be confirmed with the owner before launch.</div>
-    </div>
-  </footer>
-
+  <footer><div class="wrap"><strong>Southern Roots Salon & Barber Shop</strong> · Enterprise, Alabama<div class="disclaimer">WEBSITE CONCEPT: This is a demo site, not the official Southern Roots website. Business details, services, photos, reviews, pricing, and booking information should be confirmed with the owner before launch.</div></div></footer>
   <script>
-    document.getElementById('demoForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      const name=this.elements.name.value.trim();
-      document.getElementById('formMessage').textContent = 'Thanks'+(name?', '+name:'')+'! This is a demo, so the request was not actually sent to the shop.';
-    });
+    document.getElementById('bookingForm').addEventListener('submit',function(e){e.preventDefault();const name=this.elements.name.value.trim();const s=document.getElementById('success');s.textContent='Thanks'+(name?', '+name:'')+'! This is a demo, so no real appointment was sent.';this.reset();});
   </script>
 </body>
 </html>
